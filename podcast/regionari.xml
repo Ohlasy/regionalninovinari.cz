@@ -16,7 +16,7 @@ why: A dummy front matter to make Jekyll process this document
         <itunes:author>Asociace regionálních novinářů</itunes:author>
         <itunes:explicit>false</itunes:explicit>
         <itunes:owner>
-            <itunes:email>zoul@regionalninovinari.cz</itunes:email>
+            <itunes:email>posta@regionalninovinari.cz</itunes:email>
         </itunes:owner>
         {% for episode in site.data.regionari limit:10 %}
         <item>
