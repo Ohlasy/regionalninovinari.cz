@@ -1,3 +1,6 @@
+---
+why: A dummy front matter to make Jekyll process this document
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
     <channel>
@@ -15,16 +18,18 @@
         <itunes:owner>
             <itunes:email>zoul@regionalninovinari.cz</itunes:email>
         </itunes:owner>
+        {% for episode in site.data.regionari limit:10 %}
         <item>
-            <title>Regionáři se představují</title>
-            <description>Popisek doplníme!</description>
-            <itunes:subtitle>Popisek doplníme!</itunes:subtitle>
-            <itunes:summary>Popisek doplníme!</itunes:summary>
-            <itunes:image href="https://regionalninovinari.cz/podcast/cover.png"/>
-            <itunes:duration>960</itunes:duration>
-            <pubDate>Fri, 27 Aug 2021 14:10:00 +0200</pubDate>
-            <enclosure url="https://data.regionalninovinari.cz/podcast/0.mp3" type="audio/mpeg" length="7700000"/>
-            <guid>https://data.regionalninovinari.cz/podcast/0.mp3</guid>
+            <title>{{ episode.title | xml_escape }}</title>
+            <description>{{ episode.description | xml_escape }}</description>
+            <itunes:subtitle>{{ episode.description | xml_escape }}</itunes:subtitle>
+            <itunes:summary>{{ episode.description | xml_escape }}</itunes:summary>
+            <itunes:image href="{{ episode.image }}"/>
+            <itunes:duration>{{ episode.duration }}</itunes:duration>
+            <pubDate>{{ episode.date }}</pubDate>
+            <enclosure url="{{ episode.url }}" type="audio/mpeg" length="{{ episode.bytes }}"/>
+            <guid>{{ episode.url }}</guid>
         </item>
+        {% endfor %}
     </channel>
 </rss>
