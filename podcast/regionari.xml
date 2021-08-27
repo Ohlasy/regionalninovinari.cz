@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>Regionáři</title>
+        <language>cs</language>
+        <copyright>Asociace regionálních novinářů</copyright>
+        <link>https://regionalninovinari.cz/</link>
+        <ttl>10080</ttl>
+        <description>TBD</description>
+        <image href="https://regionalninovinari.cz/podcast/cover.png"/>
+        <itunes:category text="Society &amp; Culture"/>
+        <itunes:image href="https://regionalninovinari.cz/podcast/cover.png"/>
+        <itunes:author>Asociace regionálních novinářů</itunes:author>
+        <itunes:explicit>false</itunes:explicit>
+        <itunes:owner>
+            <itunes:email>zoul@regionalninovinari.cz</itunes:email>
+        </itunes:owner>
+        <item>
+            <title>Regionáři se představují</title>
+            <description>Popisek doplníme!</description>
+            <itunes:subtitle>Popisek doplníme!</itunes:subtitle>
+            <itunes:summary>Popisek doplníme!</itunes:summary>
+            <itunes:image href="https://regionalninovinari.cz/podcast/cover.png"/>
+            <itunes:duration>960</itunes:duration>
+            <pubDate>Fri, 27 Aug 2021 14:10:00 +0200</pubDate>
+            <enclosure url="https://data.regionalninovinari.cz/podcast/0.mp3" type="audio/mpeg" length="7700000"/>
+            <guid>https://data.regionalninovinari.cz/podcast/0.mp3</guid>
+        </item>
+    </channel>
+</rss>
